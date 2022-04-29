@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Github -->
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <!-- GitHub -->
+  <remote  name="octavi"
+           fetch="https://github.com/Octavi-Testing-Org"
+           revision="12.1" />
+
+  <!-- GitLab -->
+  <remote  name="gitlab"
+           revision="12"
+           fetch="https://gitlab.com/beingmishra/" />
+
+  <!--ART-->
+  <project path="art" name="art" groups="pdk" remote="octavi" />
+
+  <!-- Rootdir -->
+  <project path="bionic" name="bionic" groups="pdk" remote="octavi" />
+  <project path="manifest" name="manifest" remote="octavi" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="octavi" />
+
+  <!-- Build -->
+  <project path="build/make" name="build_make" groups="pdk" remote="octavi" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  
+  <!-- Device -->
+  <project path="device/octavi/sepolicy" name="device_octavi_sepolicy" remote="octavi" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,pdk-qcom" remote="octavi" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="octavi" />
+
+  <!-- External -->
+  <project path="external/tinycompress" name="external_tinycompress" remote="octavi" />
+  <project path="external/tinyxml" name="external_tinyxml" remote="octavi" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" remote="octavi" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="octavi" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="octavi" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="octavi" />
+
+  <!-- Hardware -->
+  <project path="hardware/octavi/interfaces" name="hardware_octavi_interfaces" remote="octavi" />
+  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="octavi" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="octavi" />
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="octavi" />
+  <project path="hardware/qcom-caf/bootctrl" name="hardware_qcom-caf_bootctrl" remote="octavi" />
+  <project path="hardware/qcom-caf/bt" name="hardware_qcom-caf_bt" remote="octavi" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="octavi" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="octavi" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="octavi" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" groups="pdk" remote="octavi" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="octavi" />
+
+  <!-- Vendor -->
+  <project path="vendor/octavi" name="vendor_octavi" remote="octavi" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="octavi" />
+  <project path="vendor/gms" name="platform_vendor_gms" remote="gitlab" clone-depth="1" />
+
+</manifest>
