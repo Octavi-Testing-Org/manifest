@@ -53,9 +53,7 @@
 
   <!-- Hardware -->
   <project path="hardware/octavi/interfaces" name="hardware_octavi_interfaces" remote="octavi" />
-  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="octavi" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="octavi" />
-  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="octavi" />
   <project path="hardware/qcom-caf/bootctrl" name="hardware_qcom-caf_bootctrl" remote="octavi" />
   <project path="hardware/qcom-caf/bt" name="hardware_qcom-caf_bt" remote="octavi" />
 
