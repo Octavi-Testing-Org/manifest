@@ -10,16 +10,21 @@
            fetch="https://github.com/Octavi-Testing-Org"
            revision="12.1" />
 
+  <remote  name="awaken"
+           fetch="https://github.com/Project-Awaken/"
+           revision="12.1" />
+
   <!-- GitLab -->
   <remote  name="gitlab"
-           revision="12"
-           fetch="https://gitlab.com/beingmishra/" />
+           revision="12.1"
+           fetch="https://gitlab.com/Project-Awaken/" />
 
   <!--ART-->
   <project path="art" name="art" groups="pdk" remote="octavi" />
 
   <!-- Rootdir -->
   <project path="bionic" name="bionic" groups="pdk" remote="octavi" />
+  <project path="libcore" name="android_libcore" groups="pdk" remote="awaken" />
   <project path="manifest" name="manifest" remote="octavi" />
 
   <!-- Bootable -->
@@ -35,7 +40,11 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="awaken" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
   <!-- Device -->
   <project path="device/octavi/sepolicy" name="device_octavi_sepolicy" remote="octavi" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,pdk-qcom" remote="octavi" />
@@ -58,17 +67,30 @@
   <project path="hardware/qcom-caf/bt" name="hardware_qcom-caf_bt" remote="octavi" />
 
   <!-- Packages -->
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="awaken" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="octavi" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="awaken" />
+  <project path="packages/apps/SimpleDeviceConfig" name="android_packages_apps_SimpleDeviceConfig" remote="awaken" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="awaken" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="awaken" />
+  <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="awaken" />
+  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="awaken" />
+  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="awaken" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" groups="pdk" remote="awaken" />
+  <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="awaken" />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="awaken" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="awaken" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="octavi" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="octavi" />
 
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="octavi" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="octavi" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="octavi" />
 
   <!-- Vendor -->
   <project path="vendor/octavi" name="vendor_octavi" remote="octavi" />
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="octavi" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="awaken" />
   <project path="vendor/gms" name="platform_vendor_gms" remote="gitlab" clone-depth="1" />
 
 </manifest>
