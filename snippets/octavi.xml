@@ -70,7 +70,6 @@
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="awaken" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="octavi" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="awaken" />
-  <project path="packages/apps/SimpleDeviceConfig" name="android_packages_apps_SimpleDeviceConfig" remote="awaken" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="awaken" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="awaken" />
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="awaken" />
@@ -91,6 +90,6 @@
   <project path="vendor/octavi" name="vendor_octavi" remote="octavi" />
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="octavi" />
   <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="awaken" />
-  <project path="vendor/gms" name="platform_vendor_gms" remote="gitlab" clone-depth="1" />
+  <project path="vendor/gms" name="android_vendor_gms" remote="gitlab" clone-depth="1" />
 
 </manifest>
