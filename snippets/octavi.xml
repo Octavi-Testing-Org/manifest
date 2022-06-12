@@ -18,10 +18,6 @@
            fetch="https://github.com/Project-Awaken/"
            revision="12.1" />
 
-  <remote  name="proton"
-           fetch="https://github.com/"
-           revision="sc-v2" />
-
   <!-- GitLab -->
   <remote  name="gitlab"
            revision="12.1"
@@ -105,6 +101,7 @@
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="octavi" />
 
   <!-- System -->
+  <project path="system/bt" name="system_bt" groups="pdk" remote="octavi" />
   <project path="system/core" name="system_core" groups="pdk" remote="octavi" />
   <project path="system/sepolicy" name="system_sepolicy" remote="octavi" />
   <project path="system/update_engine" name="system_update_engine" remote="octavi" />
