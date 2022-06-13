@@ -102,6 +102,7 @@
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="octavi" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="octavi" />
+  <project path="system/update_engine" name="system_update_engine" remote="octavi" />
 
   <!-- Vendor -->
   <project path="vendor/octavi" name="vendor_octavi" remote="octavi" />
