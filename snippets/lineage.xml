@@ -85,7 +85,6 @@
     <linkfile src="os_pickup.mk" dest="hardware/qcom/sm7250/Android.mk" />
     <linkfile src="os_pickup.bp" dest="hardware/qcom/sm7250/Android.bp" />
   </project>
-  <project path="hardware/qcom-caf/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom,legacy-qcom" revision="lineage-19.1-caf" remote="LineageOS"/>
   <project path="hardware/qcom-caf/msm8953/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,msm8953" revision="lineage-19.1-caf-msm8953" remote="LineageOS" />
   <project path="hardware/qcom-caf/msm8953/display" name="LineageOS/android_hardware_qcom_display" groups="qcom,msm8953" revision="lineage-19.1-caf-msm8953" remote="LineageOS" />
   <project path="hardware/qcom-caf/msm8953/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,msm8953" revision="lineage-19.1-caf-msm8953" remote="LineageOS" />
@@ -117,7 +116,6 @@
   <!-- Packages -->
   <project path="packages/apps/Bluetooth" name="LineageOS/android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="LineageOS" />
   <project path="packages/apps/Contacts" name="LineageOS/android_packages_apps_Contacts" groups="pdk-fs" remote="LineageOS" />
-  <project path="packages/apps/DeskClock" name="LineageOS/android_packages_apps_DeskClock" groups="pdk-fs" remote="LineageOS" />
   <project path="packages/apps/DocumentsUI" name="LineageOS/android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="LineageOS" />
   <project path="packages/apps/Eleven" name="LineageOS/android_packages_apps_Eleven" remote="LineageOS" />
   <project path="packages/apps/EmergencyInfo" name="LineageOS/android_packages_apps_EmergencyInfo" groups="pdk-fs" remote="LineageOS" />
@@ -184,7 +182,6 @@
   <project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" groups="qcom,sdm845" remote="LineageOS" />
   <project path="vendor/qcom/opensource/healthd-ext" name="LineageOS/android_vendor_qcom_opensource_healthd-ext" remote="LineageOS" revision="lineage-18.1" />
   <project path="vendor/qcom/opensource/libfmjni" name="LineageOS/android_vendor_qcom_opensource_libfmjni" groups="qcom" remote="LineageOS" revision="lineage-18.1" />
-  <project path="vendor/qcom/opensource/power" name="LineageOS/android_vendor_qcom_opensource_power" groups="qcom,lahaina" remote="LineageOS" />
   <project path="vendor/qcom/opensource/thermal-engine" name="LineageOS/android_vendor_qcom_opensource_thermal-engine" groups="qcom,lahaina" remote="LineageOS" />
   <project path="vendor/qcom/opensource/usb" name="LineageOS/android_vendor_qcom_opensource_usb" groups="qcom,lahaina" remote="LineageOS" />
   <project path="vendor/qcom/opensource/vibrator" name="LineageOS/android_vendor_qcom_opensource_vibrator" groups="qcom,lahaina" remote="LineageOS" />
