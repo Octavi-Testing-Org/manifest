@@ -8,7 +8,7 @@
   <!-- GitHub -->
   <remote  name="octavi"
            fetch="https://github.com/Octavi-Testing-Org"
-           revision="12.1" />
+           revision="refs/heads/12.1" />
 
   <remote  name="main"
            fetch="https://github.com/Octavi-OS"
@@ -16,7 +16,7 @@
 
   <remote  name="awaken"
            fetch="https://github.com/Project-Awaken"
-           revision="12.1" />
+           revision="refs/heads/12.1" />
 
   <!-- GitLab -->
   <remote  name="gitlab"
