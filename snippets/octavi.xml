@@ -20,8 +20,8 @@
 
   <!-- GitLab -->
   <remote  name="gitlab"
-           revision="12.1"
-           fetch="https://gitlab.com/Project-Awaken/" />
+           revision="12"
+           fetch="https://gitlab.com/rockstar5495/" />
 
   <!--ART-->
   <project path="art" name="art" groups="pdk" remote="octavi" />
@@ -109,6 +109,6 @@
   <project path="vendor/support" name="vendor_support" remote="octavi" />
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="octavi" />
   <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="awaken" />
-  <project path="vendor/gms" name="android_vendor_gms" remote="gitlab" clone-depth="1" />
+  <project path="vendor/gms" name="platform_vendor_gms" remote="gitlab" clone-depth="1" />
 
 </manifest>
